@@ -1,0 +1,12 @@
+<div style="text-align:center; margin-top: 50px;">
+  <h1>Hello I am Manoj developed Voice Assistant! 🎙️</h1>
+  <h1>How can i help you?</h1>
+  <h2>🎙️ Voice Assistant</h2>
+
+  <button (click)="startRecording()" [disabled]="recording">Start Recording</button>
+  <button (click)="stopRecording()" [disabled]="!recording">Stop Recording</button>
+     <h3>Assistant's Response:</h3>
+
+  <p *ngIf="transcript">📝 Transcript {{ transcript }}</p>
+</div>
+
